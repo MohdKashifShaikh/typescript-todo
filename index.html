@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./index.js" type="module"></script>
+    <title>Todo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+      window.onload = function () {
+        var input = document.getElementById("new-task-title").focus();
+      };
+    </script>
+  </head>
+  <body>
+    <h2>TypeScript Todo App</h2>
+    <form id="new-task-form">
+      <input type="text" id="new-task-title" placeholder="Enter New Task" />
+      <button type="submit" class="add-todo">Add</button>
+      <button type="button" id="clearTodo">Clear All</button>
+    </form>
+    <div class="list-div">
+      <ul id="list"></ul>
+    </div>
+  </body>
+</html>

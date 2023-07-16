@@ -1,0 +1,72 @@
+.flex-box {
+  display: flex;
+}
+body {
+  display: block;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+#new-task-title {
+  outline: none;
+  padding: 0.3rem;
+  border: 1px solid black;
+}
+#new-task-title::placeholder {
+  color: rgb(91, 91, 91);
+}
+.add-todo {
+  padding: 0.4rem 0.8rem;
+  background-color: rgb(75, 131, 108);
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+}
+#clearTodo {
+  padding: 0.4rem 0.7rem;
+  background-color: red;
+  border-radius: 2px;
+  color: #fff;
+  border: none;
+  font-weight: bolder;
+}
+.list-div {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#list {
+  text-align: start;
+  /* width: 300px; */
+  list-style: none;
+  padding: 0;
+}
+#list > li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -0.3rem;
+}
+#list > li > label > button {
+  margin-right: 0 !important;
+}
+.label-div {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-remove {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(78, 45, 213);
+  color: #fff;
+  border: none;
+  margin-left: 0.5rem;
+}
